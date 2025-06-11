@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/image/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container" id="formSection">
+      <div class="heading">
+        <img src="assets/image/logo.png" alt="Logo" class="logo" />
+        <h1>Generate Your Custom Design</h1>
+      </div>
+
+      <form class="card-form">
+        <label for="cardType">Card Type:</label>
+        <select id="cardType">
+          <option value="" disabled selected>Select Type</option>
+          <option value="birthday">Birthday</option>
+          <option value="anniversary">Anniversary</option>
+          <option value="greeting">Love Letter</option>
+        </select>
+
+        <div id="nameSection" class="name-section"></div>
+
+        <textarea id="message" placeholder="Write your message"></textarea>
+        <input type="text" id="from" placeholder="From" />
+        <button id="generateBtn" type="button">Start Generating</button>
+      </form>
+    </div>
+
+    <div id="cardPreview" class="cardPreview" style="display: none">
+      <button id="downloadBtn">Download Card</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </body>
+</html>
