@@ -83,6 +83,7 @@ generateBtn.addEventListener("click", () => {
       emojiSet = ["♥️", "🌹", "💐"];
     } else {
       emojiSet = ["❤️"];
+      nameSection;
     }
 
     for (const emoji of emojiSet) {
