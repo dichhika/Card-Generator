@@ -56,7 +56,7 @@ generateBtn.addEventListener("click", () => {
   const title =
     type === "birthday" || type === "anniversary"
       ? `Dear ${recipient},`
-      : "To my love";
+      : `To my love ${recipient},`;
 
   const sticker =
     type === "birthday"
