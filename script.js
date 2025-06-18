@@ -82,7 +82,7 @@ generateBtn.addEventListener("click", () => {
     } else if (type === "anniversary") {
       emojiSet = ["♥️", "🌹", "💐"];
     } else {
-      emojiSet = ["❤️"];
+      emojiSet = ["❤️", "💕"];
       nameSection;
     }
 
@@ -101,7 +101,6 @@ generateBtn.addEventListener("click", () => {
   cardPreview.innerHTML = "";
   if (downloadBtn) cardPreview.appendChild(downloadBtn);
   cardPreview.appendChild(card);
-
   formSection.style.display = "none";
   cardPreview.style.display = "block";
 });
